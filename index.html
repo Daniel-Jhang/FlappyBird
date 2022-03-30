@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- 標註網頁的語系為繁體中文 -->
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Flappy Bird</title>
+    <link rel="icon" href="./img/cookbook.png" type="image/png" sizes="16x16">
+    <meta name="description" content="">
+    <!-- preload -->
+    <link rel="preload" href="./js/flappyBird.js" as="script">
+    <link rel="preload" href="./img/background.jpg" as="image" type="image/jpg">
+    <link rel="preload" href="./img/chick.png" as="image" type="image/png">
+    <link rel="preload" href="./img/foreground.jpg" as="image" type="image/jpg">
+    <link rel="preload" href="./img/pipeNorth.png" as="image" type="image/png">
+    <link rel="preload" href="./img/pipeSouth.png" as="image" type="image/png">
+    <!-- CSS -->
+    <!-- Normalize個瀏覽器的CSS樣式 -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- 我的CSS檔案 -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="game" class="main_background">
+        <header class="page_header wrapper">
+            <h1><a href="./game.html"><img class="logo" src="./img/logo.png" alt="FlappyBird"></a></h1>
+        </header>
+        <div id="canvasContainer">
+            <canvas id="myCanvas" width="1500" height="700"></canvas>
+        </div>
+        <div class="hidden"> <!-- 暫時的，沒有辦法的辦法 -->
+            <img src="./img/game/pipeNorth.png" alt="">
+            <img src="./img/game/pipeSouth.png" alt="">
+        </div>
+    </div> <!-- /#game -->
+
+    <script src="./js/flappyBird.js"></script>
+    <script src="./js/jQuery-v3.6.0.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script src="./dreamerslab-jquery.preload-5c8025e/jquery.preload.js"></script>
+</body>
+
+</html>

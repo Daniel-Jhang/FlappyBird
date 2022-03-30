@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+/* ************************* 共通部分 ************************* */
+
+/* --------------- default --------------- */
+html {
+    font-size: 100%;
+    /* 讓網頁捲動的時候比較滑順 */
+    scroll-behavior: smooth;
+}
+
+body {
+    /* 設定行高 */
+    line-height: 1.7;
+    /* 設定文字顏色 */
+    color: #272727
+}
+
+a {
+    /* 去掉超連結的底線 */
+    text-decoration: none;
+}
+
+img {
+    /* 設定圖片寬度上限不會超過父元素的 100% */
+    max-width: 100%;
+}
+
+/* ---------------- header --------------- */
+.logo {
+    /* 設定logo的寬度 */
+    width: 300px;
+    /* logo距離上方留白 */
+    margin-top: 25px;
+}
+
+.wrapper {
+    /* 設定header的最大寬度 */
+    max-width: 2000px;
+    /* 置中顯示 */
+    margin: 0 auto;
+    /* 讓左右2側留白 */
+    padding: 0 4%;
+}
+
+
+/* 首頁背景 */
+.main_background {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+/* *************************** GAME ************************** */
+#canvasContainer {
+    border: 3px solid #272727;
+    border-radius: 10px;
+    width: 1506px;
+    height: 706px;
+    margin: 0 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#game {
+    background-image: url(/img/game/gameBackGround.jpg);
+    min-height: 100vh;
+}
+
+#myCanvas {
+    flex: 1 1 auto;
+}
+
+.hidden {
+    display: none;
+}
