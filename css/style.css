@@ -64,7 +64,7 @@ img {
 }
 
 #game {
-    background-image: url(/img/game/gameBackGround.jpg);
+    background-image: url(../img/game/gameBackGround.jpg);
     min-height: 100vh;
 }
 
